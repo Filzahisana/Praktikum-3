@@ -1,4 +1,4 @@
-/*/*Tugas4 Prak.Prodas*/
+/*Tugas4 Prak.Prodas*/
 /*Membuat program Looping Aritmatika.*/
 /*Filza Hisana*/
 /*NIM: 20051397018*/
@@ -38,7 +38,7 @@ int main()
     {
     	case '1':
     	{
-    		int i,bil,jumlahsuku,totalsuku;
+    		int i,bil,jumlahsuku = 0;
 			cout << "\n  Menghitung jumlah 6 suku pertama  \n\n";
 			
 			for (i = 1; i <= 6; i ++)
@@ -54,17 +54,16 @@ int main()
 					cout << "  ";
 					cout << i <<"^3 = " << bil << endl;
 				}	
-				jumlahsuku += bil;
-				totalsuku = jumlahsuku -3 ;	
+				jumlahsuku += bil;	
 			}
 			
-			cout << endl << "  Jumlah 6 suku pertama adalah : "<< totalsuku << endl<< endl;
+			cout << endl << "  Jumlah 6 suku pertama adalah : "<< jumlahsuku << endl<< endl;
 			break;
 		}
     	
     	case '2':
     	{
-    		int i,jumlahderet,totalderet;
+    		int i,jumlahderet = 0,totalderet = 0;
 			cout << "\n  Menghitung jumlah deret \n\n";
 			
 			for ( i = 3; i <= 30; i += 4 )
@@ -80,9 +79,9 @@ int main()
 					cout << "  ";
 					cout << i << endl<< endl;
 				}	
-				jumlahderet+=i;
-				totalderet = jumlahderet;	
+				jumlahderet+=i;	
 			}
+			totalderet = jumlahderet;
 			cout << "  Jumlah deret adalah : " << totalderet << endl;
 			break;
 		}
